@@ -1,0 +1,713 @@
+#header{
+    display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px 80px;
+     background:#efe9e9;
+     box-shadow: 0 5px 15px rgba(249, 123, 5, 0.969);
+     z-index: 999;
+     position: sticky;
+     top: 0;
+     left: 0;
+}
+#havbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #f30808;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+     color: rgb(251, 3, 3);
+    
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: none;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+#product1{
+    text-align: center;
+
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0; 
+    border-radius: 25px; 
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+
+}
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+
+
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243,181,25) ;
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(ing/banner/H3.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+#banner h4{
+    color: #fff;
+    font-size: 16px;
+}
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: red;
+   
+}
+
+#banner button:hover{
+        background: purple;
+        color: #fff;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url();
+    min-width: 665px;    
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+}
+
+#sm-banner .banner-box2{
+    background-image: url(ing/banner/H2.jpg);
+}
+
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button{
+    background: purple;
+    border: 1px solid purple;
+
+}
+
+#banner3{
+    display: flex;
+    padding: 0 200  px;
+}
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(ing/banner/b10.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#banner3 .banner-box2{
+    background-image: url(ing/banner/H2.jpg);
+}
+#banner3 .banner-box3{
+    background-image: url(ing/banner/H1.jpg);
+}
+
+#banner3 h2{
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+
+}
+
+#banner3 h3{
+    color: purple;
+    font-weight: 800;
+    font-size: 15px;
+    
+}
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(img/banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041342;
+  }
+  #newsletter h4{
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+  
+  }
+  #newsletter p{
+      font-size: 14px;
+      font-weight: 600;
+      color: #818ea0;
+  }
+  #newsletter p span{
+      color: #ffbd27;
+  }
+  #newsletter input{
+        height: 3.125rem;
+        padding: 0 1.25em;
+        font-size: 14px;
+        width: 100%;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        outline: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+  
+  }
+  #newsletter .form{
+      display: flex;
+      width: 40%;
+  }
+  #newsletter button{
+      background-color: purple;
+      color: #fff;
+      white-space: nowrap; 
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+  
+  }
+
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+}
+footer .logo{
+    margin-bottom: 30px;
+
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+
+}
+footer p{
+    font-size: 13px;
+   margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+  
+}
+footer .follow{
+   margin-top: 20px;
+    
+}
+footer .follow i{
+  color: #5b7268;
+  padding-right: 4px;
+  cursor: pointer;
+
+ }
+ 
+ footer .install .row img{
+   border: 1px solid purple;
+   border-radius: 6px;
+   cursor: pointer;
+ }
+ 
+ footer .install img{
+    margin: 10px 0 15px 0;
+    cursor: pointer;
+ }
+
+ footer .follow i:hover,
+ footer a:hover{
+    color: purple;
+ }
+ footer .copyright{
+    width: 100%;
+    text-align: center;
+
+ }
+ .logo{
+    border-image-slice: 140  40 px; 
+    src: url("ing/logo.png");
+    width: 140px;
+    height: 40px;
+}  
+
+
+/* shop  */
+
+#page-header{
+    background-image: url(ing/banner/b1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+
+
+}
+#page-header h2,
+#page-header p{
+    color: #fff;
+
+    
+}
+#pageination{
+    text-align: center;
+
+}
+#pageination a{
+    text-decoration: none;
+    background-color: purple;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pageination a i{
+  font-size: 16px;
+  font-weight: 600;
+}
+/* Single product */
+
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+
+}
+.small-ing-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-detalis{
+    width: 50%;
+    padding-top: 30px;
+}
+#prodetails .single-pro-detalis h4{
+    padding: 40px 0 20px 0;
+
+}
+#prodetails .single-pro-detalis h2{
+   font-size: 26px;
+    
+}
+#prodetails .single-pro-detalis select{
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+    
+}
+#prodetails .single-pro-detalis input{
+ width: 50px;
+ height: 47px;
+ padding-left: 10px;
+ font-size: 16px;
+ margin-right: 10px;
+}
+#prodetails .single-pro-detalis input:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-detalis button{
+    background: purple;
+    color: #fff;  
+}
+#prodetails .single-pro-detalis span{
+    line-height: 25px;
+}
+
+/* Blog Page*/
+
+#page-header.blog-header {
+    background-image: url(img/banner/b19.jpg);
+
+
+}
+
+#blog{
+    padding: 150PX;
+    right: 150px 150px 0 150px ;
+
+}
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+
+}
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+
+}
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+     
+}
+#blog .blog-details{
+    width: 70%;    /*50%*/
+   
+}
+#blog .blog-details a{
+   
+   text-decoration: none;
+   font-size: 11px;
+   color: #000;
+   font-weight: 700;
+   position: relative;
+   transition: 0.5s ;
+
+}
+
+#blog .blog-details a::after{
+
+     content: "";
+     width: 50px;
+     height: 1px;
+     background-color: #000;
+     position: absolute;
+     top: 4px;
+     right: -60px;
+
+     
+}
+#blog .blog-details a:hover:after{
+   background-color: purple;
+
+}
+#blog .blog-details a:hover{
+    color: purple;
+
+}
+#blog .blog-box h1{
+    
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -9;
+}
+
+/* contact page */
+
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#contact-details .details{
+   width: 40%;
+}
+#contact-details .details span,
+#form-details form span{
+   font-size: 12px;
+
+}
+#contact-details .details h2,
+#form-details form h2{
+   font-size: 26px;
+   line-height: 35px;
+   padding: 20px 0;
+   
+}
+#contact-details .details h3{
+   font-size: 16px;
+   padding-bottom: 15px;
+   
+}
+#contact-details .details li{
+ list-style: none;
+ display: flex;
+ padding: 10px 0;
+}
+#contact-details .details li i{
+   font-size: 14px;
+   padding-right: 22px;
+
+}
+#contact-details .details li p{
+   margin: 0;
+   font-size: 14px;
+
+}
+#contact-details .map{
+   width: 55%;
+   height: 400px;
+
+}
+#contact-details .map iframe{
+   width: 100%;
+   height: 100%;
+   
+}
+#form-details{
+    
+   justify-content: space-between;
+   margin: 30px;
+   padding: 80px;
+   border: 1px solid #edb708;
+}
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-details form input,
+#form-details form textarea{
+   width: 100%;
+   padding: 12px 15px;
+   outline: none;
+   margin-bottom: 20px;
+   border: 1px solid #e1e1e1;
+}
+#form-details form button{
+   background-color: purple;
+   color: #fff;
+   text-align: center;
+   transition: 0.8s;
+}
+#form-details form button:hover{
+  
+   background-color: rgb(196, 7, 196);
+}
+
+#form-details .people div{
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+}
+#form-details .people div img{
+   width: 20px ;
+   height: 20px;
+   object-fit: cover;
+   margin-right: 15px;
+   
+}
+#form-details .people div p{
+   margin: 0;
+   font-size: 13px;
+   line-height: 25px;
+
+}
+#form-details .people div p span{
+   display: block;
+   font-size: 16px;
+   font-weight: 6000;
+   color: #000;
+}
+
+
+
+/* Single product */
+
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+
+}
+.small-ing-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-detalis{
+    width: 50%;
+    padding-top: 30px;
+}
+#prodetails .single-pro-detalis h4{
+    padding: 40px 0 20px 0;
+
+}
+#prodetails .single-pro-detalis h2{
+   font-size: 26px;
+    
+}
+#prodetails .single-pro-detalis select{
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+    
+}
+#prodetails .single-pro-detalis input{
+ width: 50px;
+ height: 47px;
+ padding-left: 10px;
+ font-size: 16px;
+ margin-right: 10px;
+}
+#prodetails .single-pro-detalis input:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-detalis button{
+    background: purple;
+    color: #fff;  
+}
+#prodetails .single-pro-detalis span{
+    line-height: 25px;
+}
